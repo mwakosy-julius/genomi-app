@@ -249,7 +249,7 @@ def valid():
         else:
             chance-=1
     if chance == len(sequence) and chance > 0:
-        st.success('Your DNA is dynamite')
+        st.success('Your DNA is fantastic')
         st.write('DNA sequence: ',  sequence)
         st.write('DNA replicon: ', replication)
         st.write('DNA transript: ', transcription)
