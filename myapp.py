@@ -269,7 +269,7 @@ def valir():
         else:
             chance-=1
     if chance == len(sequence) and chance > 0:
-        st.success('Your RNA is dynamite')
+        st.success('Your RNA is fantastic')
         st.write('RNA sequence: ',  sequence)
         st.write('RNA replicon: ', rnaReplication)
         st.write('DNA transript: ', reverse_transcription)
