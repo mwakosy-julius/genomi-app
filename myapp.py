@@ -15,7 +15,7 @@ sequence = sequence.upper()
 sequence = sequence.splitlines()
 sequence = ''.join(sequence)
 
-DNA = st.button('DNA')
+DNA = st.button('cDNA')
 RNA = st.button('RNA')
 
 def dna_dna():
