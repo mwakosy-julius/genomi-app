@@ -8,12 +8,13 @@ st.title('WELCOME TO MY PETITE GENOMI APP')
 #image = Image.open('chroma.jpg')
 #st.image(image, use_column_width=True)
 
+col1, col2 = st.beta_columns(2)
+
 st.header('Enter Sequence')
 
 sequence = st.text_area("", height=25)
 sequence = sequence.upper()
-sequence = sequence.splitlines()
-sequence = ''.join(sequence)
+sequencer = ' '.join(sequence)
 
 DNA = st.button('DNA')
 RNA = st.button('RNA')
@@ -22,29 +23,30 @@ def dna_dna():
     replica = ''
     for nucleotide in sequence:
         if nucleotide == 'A':
-            nucleotide = 'T'
+            nucleotide = 'T '
         elif nucleotide == 'T':
-            nucleotide = 'A'
+            nucleotide = 'A '
         elif nucleotide == 'C':
-            nucleotide = 'G'
+            nucleotide = 'G '
         elif nucleotide == 'G':
-            nucleotide = 'C'
+            nucleotide = 'C '
         else:
             break
         replica+=nucleotide
+    
     return replica
 
 def transcription():
     transcript = ''
     for nucleotide in sequence:
         if nucleotide == 'A':
-            nucleotide = 'U'
+            nucleotide = 'U '
         elif nucleotide == 'T':
-            nucleotide = 'A'
+            nucleotide = 'A '
         elif nucleotide == 'C':
-            nucleotide = 'G'
+            nucleotide = 'G '
         elif nucleotide == 'G':
-            nucleotide = 'C'
+            nucleotide = 'C '
         else:
             break
         transcript+=nucleotide
@@ -349,13 +351,13 @@ def rna_rna():
     replica = ''
     for nucleotide in sequence:
         if nucleotide == 'A':
-            nucleotide = 'U'
+            nucleotide = 'U '
         elif nucleotide == 'U':
-            nucleotide = 'A'
+            nucleotide = 'A '
         elif nucleotide == 'C':
-            nucleotide = 'G'
+            nucleotide = 'G '
         elif nucleotide == 'G':
-            nucleotide = 'C'
+            nucleotide = 'C '
         replica += nucleotide
     return replica
 
@@ -363,13 +365,13 @@ def rna_dna():
     reverse = ''
     for nucleotide in sequence:
         if nucleotide == 'A':
-            nucleotide = 'T'
+            nucleotide = 'T '
         elif nucleotide == 'U':
-            nucleotide = 'A'
+            nucleotide = 'A '
         elif nucleotide == 'C':
-            nucleotide = 'G'
+            nucleotide = 'G '
         elif nucleotide == 'G':
-            nucleotide = 'C'
+            nucleotide = 'C '
         reverse += nucleotide
     return reverse
 
@@ -405,7 +407,7 @@ def valid():
 
     if chance == len(sequence) and chance > 0:
         st.success('Your DNA is fantastic')
-        st.write('dna sequence   \n',  sequence)
+        st.write('dna sequence   \n',  sequencer)
         st.write('dna replicon   \n', replication)
         st.write('dna transcript   \n ', transcription)
         st.write('AMINO ACIDS   \n', aminoAcids)
@@ -435,7 +437,7 @@ def valir():
 
     if chance == len(sequence) and chance > 0:
         st.success('Your RNA is fantastic')
-        st.write('rna sequence   \n',  sequence)
+        st.write('rna sequence   \n',  sequencer)
         st.write('rna replicon   \n', rnaReplication)
         st.write('reverse transript   \n', reverse_transcription)
         st.write('Amino acids   \n', translation)
