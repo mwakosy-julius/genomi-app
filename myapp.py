@@ -16,6 +16,7 @@ sequence = st.text_area("", height=25)
 sequence = sequence.upper()
 nott = '\n'
 sequence = sequence.replace(nott, '')
+sequencer = ' '.join(sequence)
 
 DNA = st.button('DNA')
 RNA = st.button('RNA')
