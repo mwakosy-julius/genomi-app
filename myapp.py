@@ -15,7 +15,7 @@ st.header('Enter Sequence')
 sequence = st.text_area("", height=25)
 sequence = sequence.upper()
 nott = '\n'
-sequence = sequence.translate(None, nott)
+sequence = sequence.replace(nott, '')
 
 DNA = st.button('DNA')
 RNA = st.button('RNA')
