@@ -409,7 +409,7 @@ def valid():
 
     if chance == len(sequence) and chance > 0:
         st.success('Your DNA is fantastic')
-        st.write('dna sequence   \n',  sequence)
+        st.write('dna sequence   \n',  sequencer)
         st.write('dna replicon   \n', replication)
         st.write('dna transcript   \n ', transcription)
         st.write('AMINO ACIDS   \n', aminoAcids)
@@ -439,7 +439,7 @@ def valir():
 
     if chance == len(sequence) and chance > 0:
         st.success('Your RNA is fantastic')
-        st.write('rna sequence   \n',  sequence)
+        st.write('rna sequence   \n',  sequencer)
         st.write('rna replicon   \n', rnaReplication)
         st.write('reverse transript   \n', reverse_transcription)
         st.write('Amino acids   \n', translation)
