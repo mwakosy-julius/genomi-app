@@ -395,7 +395,7 @@ def valid():
         if nucleotide == 'A' or nucleotide == 'T' or nucleotide == 'G' or nucleotide == 'C':
             chance+=1
         elif nucleotide == '\n':
-            pass
+            sequence = sequence.replace(nucleotide, '')
         elif nucleotide == ' ':
             st.error('Spaces are not allowed')
             break
@@ -427,7 +427,7 @@ def valir():
         if nucleotide == 'A' or nucleotide == 'U' or nucleotide == 'G' or nucleotide == 'C':
             chance+=1
         elif nucleotide == '\n':
-            pass
+            sequence = sequence.replace(nucleotide, '')
         elif nucleotide == ' ':
             st.error('Spaces are not allowed')
             break
