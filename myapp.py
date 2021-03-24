@@ -158,7 +158,7 @@ def percentager():
     ('A ', sequence.count('A')),
     ('G ', sequence.count('G')),
     ('C ', sequence.count('C')),
-    ('T ', sequence.count('U'))
+    ('U ', sequence.count('U'))
     ])
     return r
 
