@@ -397,8 +397,7 @@ def valid():
         if nucleotide == 'A' or nucleotide == 'T' or nucleotide == 'G' or nucleotide == 'C':
             chance+=1
         elif nucleotide == ' ':
-            st.error('Spaces are not allowed')
-            break
+            nucleotide = ''
         else:
             st.error('Invalid input in nucleotide number '+ str(sequence.index(nucleotide)+1))
             break
@@ -427,8 +426,7 @@ def valir():
         if nucleotide == 'A' or nucleotide == 'U' or nucleotide == 'G' or nucleotide == 'C':
             chance+=1
         elif nucleotide == ' ':
-            st.error('Spaces are not allowed')
-            break
+            nucleotide = ''
         else:
             st.error('Invalid input in nucleotide number '+ str(sequence.index(nucleotide)+1))
             break
