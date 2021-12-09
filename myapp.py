@@ -398,6 +398,7 @@ def valid():
             chance+=1
         elif nucleotide == ' ':
             nucleotide = ''
+            chance+=1
         else:
             st.error('Invalid input in nucleotide number '+ str(sequence.index(nucleotide)+1))
             break
@@ -427,6 +428,7 @@ def valir():
             chance+=1
         elif nucleotide == ' ':
             nucleotide = ''
+            chance+=1
         else:
             st.error('Invalid input in nucleotide number '+ str(sequence.index(nucleotide)+1))
             break
