@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 from PIL import Image
 
-st.title('WELCOME TO MY PETITE GENOMI APP')
+st.title('WELCOME TO MY GENOMI APP')
 
 #image = Image.open('chroma.jpg')
 #st.image(image, use_column_width=True)
